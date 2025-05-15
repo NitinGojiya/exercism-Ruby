@@ -1,0 +1,15 @@
+EOD : 14 May, 2025 - Wednesday (training)
+Completed:
+  -> Exercism (8)
+    -hello-world
+    -amusement-park
+    -amusement-park-improvements
+    -assembly-line
+    -lasagna
+    -log-line-parser
+    -moviegoer
+    -savings-account
+    -simple-calculator
+
+Pending :
+  -> Exercism
