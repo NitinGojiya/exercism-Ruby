@@ -16,8 +16,7 @@ module Blackjack
       'queen' => 10,
       'king' => 10,
     }
-
-    card_dict.key?(card) ? card_dict[card] : 0
+     card_dict[card] || 0
   end
 
   def self.card_range(card1, card2)
