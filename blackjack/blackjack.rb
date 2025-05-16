@@ -1,19 +1,23 @@
 module Blackjack
   def self.parse_card(card)
-    c10 = ["ten", "jack", "queen", "king"]
-    case card
-    when 'ace' then 11
-    when *c10 then 10
-    when 'nine' then 9
-    when 'eight' then 8
-    when 'seven' then 7
-    when 'six' then 6
-    when 'five' then 5
-    when 'four' then 4
-    when 'three' then 3
-    when 'two' then 2
-    else 0
-    end
+
+    card_dict = {
+      'ace' => 11,
+      'ten' => 10,
+      'nine' => 9,
+      'eight' => 8,
+      'seven' => 7,
+      'six' => 6,
+      'five' => 5,
+      'four' => 4,
+      'three' => 3,
+      'two' => 2,
+      'jack' => 10,
+      'queen' => 10,
+      'king' => 10,
+    }
+
+    card_dict.key?(card) ? card_dict[card] : 0
   end
 
   def self.card_range(card1, card2)
