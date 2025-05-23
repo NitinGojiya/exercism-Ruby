@@ -24,3 +24,6 @@ class BankAccount
     @is_open = false
   end
 end
+
+
+# account open and close
